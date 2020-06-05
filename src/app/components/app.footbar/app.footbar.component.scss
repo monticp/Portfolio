@@ -1,0 +1,11 @@
+@import "classes/app.bar";
+
+  .footbar{
+    @extend %bar;
+    position: relative;
+    bottom: 0;
+  }
+
+  .text-footbar{
+        padding: $marginBarItem * 2;
+  }

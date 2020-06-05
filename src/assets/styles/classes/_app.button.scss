@@ -1,0 +1,16 @@
+@import "app.colors.var";
+@import "app.borders.var";
+
+.button {
+    @include borderCommon();
+    background: $backgroundButton;
+}
+
+.button:hover {
+    background: $backgroundHoverButton;
+}
+
+.button-off{
+}
+
+

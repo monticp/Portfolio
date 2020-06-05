@@ -1,0 +1,25 @@
+ @import "classes/app.responsive";
+ @import "classes/app.button";
+ @import "classes/app.navbar-item";
+
+
+.about-button {
+    @extend %item-nav-button;
+}
+
+.title {
+    width: 99%;
+    background: $backgroundNavbar;
+    float: left;
+}
+
+.about-image {
+    @include borderCommon();
+    width: 99%;
+    height: 350px;
+}
+
+.about-me-p{
+    padding: 30px;
+    float: left;
+}

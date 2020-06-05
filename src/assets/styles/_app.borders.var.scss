@@ -1,0 +1,9 @@
+$borderButtonOff: solid #000 1px;
+
+$borderCommonSize: 2px;
+$borderCommonType: solid;
+$borderCommonColor: #000;
+
+@mixin borderCommon() {
+    border: $borderCommonSize $borderCommonColor $borderCommonType;
+}

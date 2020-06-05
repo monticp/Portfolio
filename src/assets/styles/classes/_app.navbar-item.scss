@@ -1,0 +1,42 @@
+@import "app.bar.var";
+@import "app.borders.var";
+@import "app.responsive.var";
+
+$svgSide: 40px;
+
+$boxShadowButtom: 1px;
+$topPaddingBarItem: $marginBarItem/4;
+$topMarginButtom: ($heightBar - $svgSide - ($borderCommonSize*2) - ($topPaddingBarItem*2) - $boxShadowButtom - 4) / 2 ;
+
+%item-nav {
+    position: fixed;
+    top: $heightBar;
+    right: 0px;
+    z-index: 2;
+}
+
+%item-nav-button {
+       @extend %item-nav;
+       @include borderCommon();
+       margin: $topMarginButtom $marginBarItem*2;
+       padding: $topPaddingBarItem $marginBarItem/2;
+       box-shadow: $boxShadowButtom $boxShadowButtom $boxShadowButtom 0px;
+}
+
+%item-nav-image {
+       @extend %item-nav;
+       margin: $marginBarItem $marginBarItem*2;
+}
+
+.svg-bar{
+    height: $svgSide;
+    width: $svgSide;
+}
+
+ @media only screen and (max-width: $maxWidthResponsive) {
+    %item-nav {
+        position: absolute;
+        top: $heightNavbar + $topMarginContainer;
+        right: 0px;
+    }
+ }

@@ -1,0 +1,54 @@
+@import "app.responsive.var";
+@import "app.bar.var";
+@import "app.colors.var";
+
+
+
+.navbar {
+    position: fixed;
+    width: 100%;
+    height: $heightBar;
+    z-index: 2;
+}
+
+.topbar {
+    position: fixed;
+    top: 0;
+    z-index: 3;
+}
+
+.main-section {
+    position: relative;
+    top: $heightBar * 2;
+    left: 0;
+    right: 0;
+    width: 100%;
+    z-index: 1;
+    height: 100%;
+}
+
+.body {
+    display: flex;
+    height: 100%;
+    float: left;
+}
+
+ .footer {
+     display: inline-block;
+     width: 100%;
+ }
+
+
+ @media only screen and (max-width: $maxWidthResponsive) {
+
+        .main-section {
+            top: $heightBar;
+        }
+        .navbar {
+            position: relative;
+            top: 0;
+            height: $heightNavbar;
+            z-index: 2;
+            background: $backgroundNavbar;
+        }
+}

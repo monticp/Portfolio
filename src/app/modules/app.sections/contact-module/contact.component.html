@@ -1,0 +1,31 @@
+<div class="main-container">
+  <div class="container left-container">
+    <form class="form" name="form" method="post" (submit)="submit()">
+      <span><h2>Envía tu mensaje</h2></span>
+      <br>
+      <caption class="caption">Nombre:</caption>
+      <input class="input" type="text" placeholder="Nombre" autofocus required>
+      <br><br>
+      <caption class="caption">eMail:</caption>
+      <input class="input" type="email" placeholder="e-Mail" required>
+      <br><br>
+      <caption class="caption">Asunto:</caption>
+      <input class="check" type="radio" name="subject" value="job" required>Laboral
+      <input class="check" type="radio" name="subject" value="education" required>Educativo
+      <br><br>
+      <caption class="caption">Comentario:</caption>
+      <textarea class="comment" type="text" placeholder="Ingrese aquí su comentario" required></textarea><br>
+      <br>
+      <input class="check caption" type="checkbox" checked>Deseo recibir notificaciones
+      <br><br>
+      <input class="caption" type="submit"><br>
+    </form>
+    <br>
+  </div>
+  <div class="container right-container">
+      <img class="image-container"
+           alt="About Image"
+           src="app\modules\app.sections\contact-module\assets\contactImage2.jpg"
+        />
+  </div>
+</div>

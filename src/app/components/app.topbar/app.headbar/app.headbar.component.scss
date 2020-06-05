@@ -1,0 +1,20 @@
+@import "classes/app.bar";
+
+  .headbar{
+     @extend %bar;
+     top: 0;
+     position: fixed;
+  }
+
+  .image-headbar, .text-headbar {
+    margin: 0px $marginBarItem;
+  }
+
+  .image-headbar{
+    width: $widthBarImage;
+  }
+
+  .text-headbar{
+    font-size: 17px;
+    font-family: Verdana;
+  }

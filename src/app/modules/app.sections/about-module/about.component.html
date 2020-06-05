@@ -1,0 +1,29 @@
+<div class="main-container">
+  <button (click)="pauseAudio()" type="button" class="about-button"
+          [ngClass] = "isPaused() ? 'button-off' : 'button'">
+    <div class="image-button">
+      <svg class="svg-bar svg-button">
+        <use xlink:href="app\modules\app.sections\about-module\assets\NotSound.svg#NotSound-icon"></use>
+      </svg>
+    </div>
+  </button>
+  <div class="container">
+    <audio #aboutAudio>
+      <source src="app\modules\app.sections\about-module\assets\creep.mp3" type="audio/mp3">
+    </audio>
+    <div class="title"><span><h2>Desarrollador</h2></span></div>
+    <pre class="about-me-p">
+
+      En construcción.
+
+
+
+    </pre>
+  </div>
+  <div class="container">
+    <img #aboutImage
+         class="image-container about-image"
+         alt="about-image"
+    />
+  </div>
+</div>

@@ -1,0 +1,29 @@
+   @import "classes/app.responsive";
+   @import "app.colors.var";
+   @import "app.borders.var";
+
+
+   $paddingForm: 10%;
+   $leftMarginForm: 2%;
+
+    .form {
+          @include borderCommon();
+          box-sizing: border-box;
+          padding: $paddingForm $paddingForm;
+          z-index: 6;
+          background: $backgroundItemCommon;
+          width: 100% - $leftMarginForm*2;
+          height: 100%;
+          margin: 0px $leftMarginForm;
+    }
+
+    .comment, .input {
+         width: 100%;
+    }
+
+    .comment {
+        resize: vertical;
+        max-height: 300px;
+        min-height: 100px;
+    }
+
